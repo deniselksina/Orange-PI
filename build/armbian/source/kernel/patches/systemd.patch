@@ -1,0 +1,10 @@
+diff --git a/etc/systemd/system/myapp.service b/etc/systemd/system/myapp.service
+index 123abcd..456efgh 100644
+--- a/etc/systemd/system/myapp.service
++++ b/etc/systemd/system/myapp.service
+@@ -5,7 +5,7 @@
+[Service]
+ExecStart=/usr/bin/myapp --config /etc/myapp/config
+Restart=always
+-Environment=MYAPP_CONFIG=/etc/myapp/config
++Environment=MYAPP_CONFIG=/etc/myapp/newconfig
