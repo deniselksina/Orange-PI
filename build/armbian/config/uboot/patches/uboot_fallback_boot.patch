@@ -1,0 +1,12 @@
+diff --git a/common/boot.c b/common/boot.c
+index 2345678..8765432 100644
+--- a/common/boot.c
++++ b/common/boot.c
+@@ -50,6 +50,12 @@
+ if (usb_device_connected()) {
+     // Попытка загрузки с USB устройства
+     boot_from_usb();
++} else if (sd_card_detected()) {
++    // Резервная загрузка с SD карты
++    boot_from_sd_card();
+ }
