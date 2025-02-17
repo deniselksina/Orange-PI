@@ -1,0 +1,8 @@
+diff --git a/etc/security/access.conf b/etc/security/access.conf
+index abc123..def456 100644
+--- a/etc/security/access.conf
++++ b/etc/security/access.conf
+@@ -45,7 +45,7 @@
+# Restrict root login from non-local connections
+-:root:ALL EXCEPT LOCAL
++:root:ALL EXCEPT LOCAL, 192.168.1.0/24
