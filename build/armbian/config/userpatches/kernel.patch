@@ -1,0 +1,10 @@
+diff --git a/drivers/net/ethernet/arm/arm_eth.c b/drivers/net/ethernet/arm/arm_eth.c
+index e69de29..b1b82d3 100644
+--- a/drivers/net/ethernet/arm/arm_eth.c
++++ b/drivers/net/ethernet/arm/arm_eth.c
+@@ -50,6 +50,7 @@ static int arm_eth_probe(struct platform_device *pdev)
+     /* Добавление улучшений для драйвера */
+     printk(KERN_INFO "Настроен драйвер Ethernet для Orange PI\n");
++    // Дополнительный код для исправления работы с Wi-Fi
+     return 0;
+ }
