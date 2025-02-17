@@ -1,0 +1,9 @@
+diff --git a/include/configs/orangepi.h b/include/configs/orangepi.h
+index 1234567..89abcdef 100644
+--- a/include/configs/orangepi.h
++++ b/include/configs/orangepi.h
+@@ -20,6 +20,7 @@
+ #define CONFIG_CMD_PXE
+ #define CONFIG_BOOTP
+ #define CONFIG_NET
+ #define CONFIG_CMD_NET
