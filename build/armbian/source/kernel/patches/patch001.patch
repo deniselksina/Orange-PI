@@ -1,0 +1,8 @@
+diff --git a/drivers/net/ethernet/eth_driver.c b/drivers/net/ethernet/eth_driver.c
+index 789abcd..1234567 100644
+--- a/drivers/net/ethernet/eth_driver.c
++++ b/drivers/net/ethernet/eth_driver.c
+@@ -95,6 +95,7 @@
+ #include "eth_driver.h"
+
++#define SUPPORT_NEW_NETWORK_CARD
