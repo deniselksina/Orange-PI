@@ -1,0 +1,14 @@
+--- include/configs/orange-pi-pc.h
++++ include/configs/orange-pi-pc.h
+@@ -35,7 +35,7 @@
+ #define CONFIG_SYS_MMC_ENV_DEV 0
+ #define CONFIG_SYS_MMC_ENV_PART 0
+
+-#define CONFIG_CMD_I2C  /* Команда I2C неактивна */
++#define CONFIG_CMD_I2C  /* Включаем команду I2C */
+
+ #define CONFIG_I2C_MULTI_BUS 1  /* Поддержка нескольких I2C шин */
+ 
+ #define CONFIG_I2C_KEYPAD /* Добавлена поддержка I2C клавиатуры */
+ 
+ #define CONFIG_CMD_SPI  /* Поддержка SPI для устройств */
