@@ -1,0 +1,11 @@
+diff --git a/etc/X11/xorg.conf.d/10-monitor.conf b/etc/X11/xorg.conf.d/10-monitor.conf
+index abc1234..789xyz1 100644
+--- a/etc/X11/xorg.conf.d/10-monitor.conf
++++ b/etc/X11/xorg.conf.d/10-monitor.conf
+@@ -50,7 +50,7 @@
+Section "Monitor"
+Identifier   "Monitor0"
+Option       "PreferredMode" "1920x1080"
+-Option       "DPMS" "false"
++Option       "DPMS" "true"
+EndSection
