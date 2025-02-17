@@ -1,0 +1,11 @@
+/dts-v1/;
+
+/ {
+    compatible = "allwinner,sun4i-a10";
+    fragment@0 {
+        target = <&csi>;
+        __overlay__ {
+            status = "okay";
+        };
+    };
+};
