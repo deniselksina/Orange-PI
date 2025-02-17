@@ -1,0 +1,9 @@
+diff --git a/init/init.c b/init/init.c
+index 1234567..89abcdef 100644
+--- a/init/init.c
++++ b/init/init.c
+@@ -85,6 +85,7 @@ void init() {
+     // Инициализация новых функций
++    printk(KERN_INFO "Инициализация системы для Orange PI\n");
+     // Новый код для улучшения совместимости
+ }
