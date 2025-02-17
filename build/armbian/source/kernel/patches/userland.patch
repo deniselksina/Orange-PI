@@ -1,0 +1,11 @@
+diff --git a/usr/bin/customtool b/usr/bin/customtool
+index 123abc..def456 100755
+--- a/usr/bin/customtool
++++ b/usr/bin/customtool
+@@ -32,7 +32,7 @@
+# Change behavior of the tool to fix a bug in handling input files
+if (input_file == NULL) {
+    fprintf(stderr, "Input file is required\n");
+-    exit(1);
++    return 1;
+}
