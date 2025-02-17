@@ -1,0 +1,9 @@
+diff --git a/kernel/drivers/usb/usb_device.c b/kernel/drivers/usb/usb_device.c
+index 12ab345..678cd90 100644
+--- a/kernel/drivers/usb/usb_device.c
++++ b/kernel/drivers/usb/usb_device.c
+@@ -200,7 +200,7 @@
+ if (usb_device_is_present()) {
+-    return usb_device_init();
++    return usb_device_reset();
+}
