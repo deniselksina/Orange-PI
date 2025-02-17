@@ -1,0 +1,16 @@
+/dts-v1/;
+
+/ {
+    compatible = "allwinner,sun4i-a10";
+    fragment@0 {
+        target = <&pio>;
+        __overlay__ {
+            gpio1 {
+                pins = "PA0", "PA1", "PA2";
+                function = "gpio";
+                drive = <8>;
+                bias-pull-up;
+            };
+        };
+    };
+};
