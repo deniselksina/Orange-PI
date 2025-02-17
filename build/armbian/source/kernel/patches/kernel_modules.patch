@@ -1,0 +1,12 @@
+diff --git a/drivers/net/ethernet/ethernet_driver.c b/drivers/net/ethernet/ethernet_driver.c
+index abc1234..def5678 100644
+--- a/drivers/net/ethernet/ethernet_driver.c
++++ b/drivers/net/ethernet/ethernet_driver.c
+@@ -100,7 +100,8 @@
+static int eth_probe(struct pci_dev *pdev, const struct pci_device_id *id)
+{
+    // New fix for device detection
++    if (pci_enable_device(pdev)) {
++        return -ENODEV;
++    }
+}
