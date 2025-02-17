@@ -1,0 +1,34 @@
+# Конфигурация ядра для Orange PI PC
+# Пример файла конфигурации для ядра 5.10 для Orange PI
+
+CONFIG_ARM=y
+CONFIG_ARCH_ARM=y
+CONFIG_ARCH_MULTI_V7=y
+CONFIG_ARM_AMBA=y
+CONFIG_ARM_CPU_SUSPEND=y
+CONFIG_CPU_ARMV7=y
+
+# Поддержка драйверов
+CONFIG_USB_SUPPORT=y
+CONFIG_USB_STORAGE=y
+CONFIG_FAT_FS=y
+CONFIG_EXT4_FS=y
+
+# Сетевые драйверы
+CONFIG_NET=y
+CONFIG_TULIP=y
+CONFIG_DW_ETH_QOS=y
+
+# Настройки для Orange PI
+CONFIG_MMC=y
+CONFIG_MMC_BLOCK=y
+CONFIG_MMC_SDHCI=y
+CONFIG_MMC_SDHCI_PLTFM=y
+CONFIG_MMC_SDHCI_SUNXI=y
+
+# Поддержка GPIO для Orange PI
+CONFIG_GPIO_SUNXI=y
+
+# Основные параметры системы
+CONFIG_SYS_SUPPORTS_ZBOOT=y
+CONFIG_CONSOLE_MUX=y
