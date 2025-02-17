@@ -1,0 +1,10 @@
+diff --git a/stdlib/malloc.c b/stdlib/malloc.c
+index abcdef1..1234567 100644
+--- a/stdlib/malloc.c
++++ b/stdlib/malloc.c
+@@ -98,7 +98,7 @@
+if (size > MAX_ALLOC_SIZE) {
+    fprintf(stderr, "Requested size is too large\n");
+-    exit(EXIT_FAILURE);
++    return NULL;  // Prevent crash by returning NULL
+}
