@@ -1,0 +1,10 @@
+diff --git a/board/arm/orangepi/Makefile b/board/arm/orangepi/Makefile
+index d41d8cd..c6a0d67 100644
+--- a/board/arm/orangepi/Makefile
++++ b/board/arm/orangepi/Makefile
+@@ -10,7 +10,7 @@ obj-y += common/
+ 
+ CONFIG_ARM64=y  # Включение поддержки ARM64 для загрузки
+-BOARD=orangepi
++BOARD=orangepi_pc
+
