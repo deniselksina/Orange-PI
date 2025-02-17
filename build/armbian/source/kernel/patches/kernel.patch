@@ -1,0 +1,8 @@
+diff --git a/drivers/gpu/arm/mali/mali_kbase.c b/drivers/gpu/arm/mali/mali_kbase.c
+index abc1234..def5678 100644
+--- a/drivers/gpu/arm/mali/mali_kbase.c
++++ b/drivers/gpu/arm/mali/mali_kbase.c
+@@ -42,6 +42,7 @@
+ #include "mali_kbase.h"
+
++#define MALI_NEW_FEATURE
