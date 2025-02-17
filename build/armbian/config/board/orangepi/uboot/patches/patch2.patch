@@ -1,0 +1,37 @@
+--- drivers/video/Makefile
++++ drivers/video/Makefile
+@@ -10,6 +10,7 @@
+ obj-y += fb.o
+ obj-y += display.o
+ 
++obj-y += new_device_display.o  /* Добавляем новый дисплей */
+ 
+--- drivers/video/new_device_display.c
++++ drivers/video/new_device_display.c
+@@ -0,0 +1,1000 @@
++#include <common.h>
++#include <asm/io.h>
++#include <asm/arch/sunxi_pio.h>
++#include <video_fb.h>
++
++/* Конфигурация нового дисплея */
++void init_new_device_display(void)
++{
++    /* Инициализация нового дисплея */
++    // Например, настройка SPI, GPIO и других параметров
++    printf("Инициализация нового дисплея через SPI\n");
++}
++
++int display_new_device(void)
++{
++    /* Логика для отображения на новом дисплее */
++    printf("Отображаем информацию на новом дисплее\n");
++    return 0;
++}
++
++/* Регистрируем новый дисплей */
++void setup_display(void)
++{
++    init_new_device_display();
++    display_new_device();
++}
