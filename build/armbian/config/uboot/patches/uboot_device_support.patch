@@ -1,0 +1,8 @@
+diff --git a/board/arm/orangepi/Makefile b/board/arm/orangepi/Makefile
+index abcdef1..1234567 100644
+--- a/board/arm/orangepi/Makefile
++++ b/board/arm/orangepi/Makefile
+@@ -10,6 +10,7 @@
+ # Добавляем поддержку нового устройства
+ CONFIG_CMD_SPI=y
+ CONFIG_SPI_FLASH=y
