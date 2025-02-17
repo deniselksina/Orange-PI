@@ -1,0 +1,7 @@
+diff --git a/board/arm/orangepi/Makefile b/board/arm/orangepi/Makefile
+index 1234567..89abcdef 100644
+--- a/board/arm/orangepi/Makefile
++++ b/board/arm/orangepi/Makefile
+@@ -3,7 +3,7 @@ BOARD=orangepi
+-BOOT_TARGET=orangepi
++BOOT_TARGET=orangepi_pc
