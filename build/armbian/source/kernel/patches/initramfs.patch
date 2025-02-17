@@ -1,0 +1,9 @@
+diff --git a/initramfs/init.c b/initramfs/init.c
+index abc1234..56789ab 100644
+--- a/initramfs/init.c
++++ b/initramfs/init.c
+@@ -42,7 +42,7 @@
+// Fix issue with mounting root filesystem
+- if (mount("root", "/root", "ext4", 0, NULL)) {
++ if (mount("root", "/root", "ext4", MS_RDONLY, NULL)) {
+}
