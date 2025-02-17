@@ -1,0 +1,12 @@
+# Настройки U-Boot для Orange PI с пользовательскими изменениями
+CONFIG_ARCH_SUNXI=y
+CONFIG_ARM=y
+CONFIG_MACH_SUN6I=y
+CONFIG_MACH_ORANGE_PI_PC=y
+CONFIG_SPL=y
+CONFIG_CMD_GPIO=y
+CONFIG_CMD_SPI=y                # Добавлена поддержка SPI
+CONFIG_CMD_I2C=y                # Добавлена поддержка I2C
+CONFIG_CMD_EXT4=y               # Поддержка EXT4
+CONFIG_SYS_BOOTM_LEN=0x3000000  # Увеличен размер памяти для загрузки
+CONFIG_ENV_SIZE=0x10000         # Размер среды
