@@ -1,0 +1,27 @@
+# Конфигурация для U-Boot для платформы с чипом Allwinner H3 (например, Orange PI PC)
+
+CONFIG_ARCH_SUNXI=y                  # Использование архитектуры Sunxi (Allwinner)
+CONFIG_TARGET_SUNXI=y                # Установка цели на платформу Sunxi
+CONFIG_SYS_MALLOC_F="16MiB"          # Установка размера памяти для malloc
+CONFIG_CMD_USB=y                     # Включение поддержки USB
+CONFIG_CMD_NET=y                     # Включение сетевой загрузки
+CONFIG_CMD_MMC=y                     # Включение поддержки MMC/SD
+CONFIG_SPL=y                          # Включение SPL (Secondary Program Loader)
+CONFIG_SPL_OS_BOOT=y                 # Включение загрузки ОС в SPL
+
+# Определение типов памяти
+CONFIG_SYS_MEMTEST_START=0x40000000  # Стартовая адресация для теста памяти
+CONFIG_SYS_MEMTEST_END=0x44000000    # Конечная адресация для теста памяти
+
+# Параметры загрузки и конфигурации
+CONFIG_BOOTDELAY=3                   # Время ожидания перед загрузкой
+CONFIG_BOOTCOMMAND="run bootcmd_mmc"  # Команда по умолчанию для загрузки с MMC
+CONFIG_BOOTARGS="console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait"  # Аргументы ядра
+
+# Установка конфигурации сетевого интерфейса
+CONFIG_NET_MULTI=y                   # Включение поддержки нескольких сетевых интерфейсов
+CONFIG_ETHADDR=00:14:22:01:02:03     # MAC-адрес сетевого интерфейса
+
+# Сетевые настройки (например, для загрузки через TFTP)
+CONFIG_CMD_DHCP=y                    # Включение DHCP
+CONFIG_NET_TFTP=y                    # Включение поддержки TFTP
