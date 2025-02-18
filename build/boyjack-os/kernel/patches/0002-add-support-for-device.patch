@@ -1,0 +1,16 @@
+--- a/kernel/drivers/usb/host/ehci-hcd.c
++++ b/kernel/drivers/usb/host/ehci-hcd.c
+@@ -1050,6 +1050,14 @@ static int ehci_hcd_init(struct usb_hcd *hcd)
+    /* Existing initialization code */
+
++   /* Add support for new USB device */
++   if (device_id == NEW_DEVICE_ID) {
++       /* Custom initialization for the new device */
++       pr_info("Initializing new USB device with ID: %d\n", device_id);
++       /* Setup necessary registers, configurations, etc. */
++   } else {
++       pr_warn("Unknown device ID: %d\n", device_id);
++   }
++
+    return 0;
+}
