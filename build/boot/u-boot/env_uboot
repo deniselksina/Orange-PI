@@ -1,2 +1,0 @@
-setenv bootdelay 5
-setenv bootargs console=ttyS0,115200
