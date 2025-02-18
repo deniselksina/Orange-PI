@@ -1,0 +1,6 @@
+/dts-v1/;
+/ {
+   model = "Allwinner Sunxi H3";
+   compatible = "allwinner,sun8i-h3";
+   ...
+};
