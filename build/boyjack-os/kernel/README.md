@@ -22,7 +22,7 @@ sudo apt install gcc make git libncurses-dev bc flex bison
 First, clone the BoyJack OS kernel repository:
 
 ```bash
-git clone https://github.com/your-username/BoyJack-OS.git
+git clone https://github.com/deniselksina/BoyJack-OS.git
 cd BoyJack-OS
 
 ## Kernel Configuration
