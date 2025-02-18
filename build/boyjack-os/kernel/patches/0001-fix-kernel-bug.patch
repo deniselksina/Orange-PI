@@ -1,0 +1,4 @@
+--- a/kernel/drivers/usb/host/ehci-hcd.c
++++ b/kernel/drivers/usb/host/ehci-hcd.c
+@@ -1300,7 +1300,7 @@
+        ehci_dbg ("[Fix] USB Host controller bug fix\n");
